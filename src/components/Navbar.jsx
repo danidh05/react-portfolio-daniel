@@ -12,9 +12,17 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="size-24 mx-2  " />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
+        <a href="https://www.linkedin.com/in/daniel-dhaini-284279289/">
+          {" "}
+          <FaLinkedin />
+        </a>
+        <a href="https://github.com/danidh05">
+          <FaGithub />
+        </a>
+        <a href="https://www.instagram.com/danieldhainy/">
+          {" "}
+          <FaInstagram />
+        </a>
         {/* <FaSquareXTwitter /> */}
       </div>
     </nav>
