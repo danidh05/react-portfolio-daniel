@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/WhatsappClone.jpg";
+import project1 from "../assets/projects/WhatsAppClone.jpg";
 import project2 from "../assets/projects/Yoom.png";
 // import project3 from "../assets/projects/project-3.jpg";
 // import project4 from "../assets/projects/project-4.jpg";
