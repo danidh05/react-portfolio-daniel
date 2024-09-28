@@ -49,7 +49,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt="Daniel Dhaini"
-              className="w-[500px] h-[500px] rounded-lg"
+              className="w-[500px] h-[400px] rounded-lg"
             />
           </div>
         </div>
