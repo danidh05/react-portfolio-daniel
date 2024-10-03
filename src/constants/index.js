@@ -17,7 +17,7 @@ export const EXPERIENCES = [
       "Laravel",
       "MySQL",
       "Reactjs",
-      "Tailwind",
+      "TailwindCSS",
       "REST APIs",
       "Git",
     ],
@@ -36,7 +36,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "October 2023 - May 2024",
+    year: "November 2023 - May 2024",
     role: "Backend Developer",
     company: "Xpertbot",
     description: `I developed responsive websites using Laravel and improved API throughput by 20% to enhance data efficiency. I gained hands-on experience in software development best practices, Git version control, and agile workflows, while collaborating closely within a team. My role also focused on ensuring a smooth, bug-free user experience with fast, reliable data processing.`,
