@@ -1,89 +1,125 @@
 import project1 from "../assets/projects/WhatsAppClone.jpg";
 import project2 from "../assets/projects/Yoom.png";
-// import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
+import project3 from "../assets/projects/Streamify.png";
+import project4 from "../assets/projects/StudySuite.png";
+import project5 from "../assets/projects/XpertCheck.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 1 year of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Laravel, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I’m Daniel Dhaini — a Full Stack Developer and AI enthusiast passionate about building scalable systems that bridge business needs with intelligent technology. With hands-on experience across Laravel, Next.js, and FastAPI, I’ve delivered production-grade projects ranging from social platforms and eCommerce systems to AI-powered SaaS solutions. My focus is on creating performant, maintainable, and elegant software that drives real impact.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With a year of professional experience, I specialize in backend development using Laravel and MySQL, while leveraging Next.js for dynamic frontends. I work extensively with React and TypeScript, primarily using Tailwind CSS for styling, alongside experience with Bootstrap and UI libraries like Shadcn and MUI. My proficiency in the MERN stack further enables me to deliver comprehensive web solutions.`;
-export const ABOUT_TEXT2 = `In addition to my web development expertise, I create Windows Forms applications using the .NET framework and SQL Server. I thrive in collaborative environments, enjoy tackling complex problems, and am committed to delivering high-quality solutions. My knowledge in quality assurance, encompassing both manual and automated testing, enhances my ability to ensure robust application performance.`;
+export const ABOUT_TEXT = `I’m a results-driven Full Stack Developer with a Bachelor’s in Business Computer from the Lebanese University (GPA 3.77/4.0) and a current Master’s candidate in Information Systems Engineering. My technical expertise spans backend engineering with Laravel, MySQL, and REST APIs; and modern frontends using React, Next.js, and TypeScript — styled with Tailwind CSS and powered by clean architecture.`;
+
+export const ABOUT_TEXT2 = `At Devzur, I lead backend development for real-world applications including NurseCare, Univibe, and the Playhouse POS system, applying SOLID principles, Redis queues, and AWS infrastructure. Beyond web development, I build .NET desktop applications using SQL Server, and have a strong foundation in QA, both manual and automated. I’m currently expanding into AI and data-driven architectures through the IBM AI Engineering Professional Certificate, combining backend precision with machine learning insight.`;
+
 export const EXPERIENCES = [
   {
-    year: "September 2024 - Present",
-    role: "Full Stack Developer",
+    year: "Sep 2024 – Present",
+    role: "Backend Developer",
     company: "Devzur",
-    description: `I lead a team of interns in developing a new social media platform, managing the project from concept to execution while mentoring the interns to enhance their skills. As a full stack developer, I work on various client projects, primarily using Laravel and MySQL for backend development. On the frontend, I specialize in React and Tailwind CSS, delivering responsive and efficient user interfaces. My role also involves collaborating with cross-functional teams to ensure that both the platform and client solutions meet high standards of quality and user satisfaction.`,
+    description: `Architected and developed the backend of **NurseCare**, a multilingual healthcare platform with real-time chat, role-based access, and location-based pricing.  
+Built a **Playhouse POS system** featuring role management, shift tracking, and expense monitoring for administrators.  
+Led backend development for **Univibe**, a social platform for universities, mentoring three Laravel interns and overseeing API design and scalability.  
+Delivered features in Agile sprints with SOLID principles, service-based architecture, and continuous integration.`,
     technologies: [
       "Laravel",
       "MySQL",
-      "Reactjs",
-      "TailwindCSS",
+      "Redis",
+      "AWS",
       "REST APIs",
+      "Docker",
       "Git",
     ],
   },
   {
-    year: "May 2024 - August 2024",
-    role: "Frontend Developer",
+    year: "May 2024 – Aug 2024",
+    role: "Frontend Developer Intern",
     company: "Ogero",
-    description: ` I focused on frontend development using React, with a primary emphasis on data visualization. I developed interactive and responsive charts using libraries like Chart.js and React-Chartjs-2, enabling users to analyze complex data sets effectively. My role involved optimizing performance and ensuring seamless user interactions within the visual components, contributing to a more intuitive data analysis experience.`,
-    technologies: [
-      "Reactjs",
-      "Typescript",
-      "TailwindCSS",
-      "Chart.js",
-      "react-chartjs-2",
-    ],
+    description: `Developed interactive dashboards for telecom data visualization using React, TypeScript, and Chart.js.  
+Optimized component performance through lazy loading and state management improvements.  
+Delivered production-ready charts and analytics tools praised by internal teams for usability and speed.`,
+    technologies: ["React", "TypeScript", "TailwindCSS", "Chart.js"],
   },
   {
-    year: "November 2023 - May 2024",
-    role: "Backend Developer",
+    year: "Nov 2023 – May 2024",
+    role: "Backend Developer Intern",
     company: "Xpertbot",
-    description: `I developed responsive websites using Laravel and improved API throughput by 20% to enhance data efficiency. I gained hands-on experience in software development best practices, Git version control, and agile workflows, while collaborating closely within a team. My role also focused on ensuring a smooth, bug-free user experience with fast, reliable data processing.`,
-    technologies: ["Laravel", "MySQL", "Bootstrap", "REST APIs", "Git"],
+    description: `Built and tested RESTful APIs for **XpertCheck**, a Laravel-based employee management platform supporting attendance tracking, client management, and project visibility.  
+Enhanced API throughput and data integrity while collaborating with cross-functional teams in Agile sprints.`,
+    technologies: ["Laravel", "MySQL", "Bootstrap", "Git", "REST APIs"],
   },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
 ];
 
 export const PROJECTS = [
   {
-    title: "Whatsapp Clone",
-    image: project1,
+    title: "StudySuite",
+    image: project4,
     description:
-      "Developed an advanced communication platform enabling text, emoji, video, and image messaging for individuals and groups, complete with group chat time stamps. The application includes customizable themes, personal information updates, and a Zoom-like video chat interface. Integrated OpenAI API for ChatGPT queries and DALL·E for image generation, enhancing user interaction and creativity.",
-    technologies: ["Nextjs", "TailwindCSS", "React", "Typescript", "ConvexDB"],
+      "An AI-powered SaaS platform revolutionizing student productivity. Built with Laravel, FastAPI, and Next.js, StudySuite enables PDF uploads, AI-driven Q&A, summarization, and translation. Features secure inter-service communication via HMAC-authenticated callbacks, Redis queues for async processing, and AWS S3 for file storage. Designed for scalability and seamless UX.",
+    technologies: [
+      "Laravel",
+      "FastAPI",
+      "Next.js",
+      "TailwindCSS",
+      "MySQL",
+      "Redis",
+      "AWS S3",
+      "Docker",
+    ],
+  },
+  {
+    title: "XpertCheck",
+    image: project5,
+    description:
+      "A comprehensive workforce management system built with Laravel and MySQL. Enables admins to manage employees, track attendance, and organize clients and projects with real-time monitoring and intuitive UI. Enhanced efficiency and productivity across multiple organizations through automation and detailed reporting.",
+    technologies: ["Laravel", "MySQL", "Bootstrap", "REST APIs", "Git"],
+  },
+  {
+    title: "Streamify",
+    image: project3,
+    description:
+      "A Netflix-style streaming platform using the MERN stack and WebTorrent. Fetches TMDB content dynamically, streams torrent-based media in-browser, and supports organized playback for movies and TV shows with multiple resolutions and magnet link handling. Focused on decentralized streaming performance and clean UI.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React",
+      "TailwindCSS",
+      "WebTorrent",
+    ],
   },
   {
     title: "Yoom",
     image: project2,
     description:
-      "Developed a Zoom clone with features for creating and customizing meetings, toggling camera and voice, screen sharing, recording meetings, viewing past recordings, and managing a personal room for ongoing and upcoming meetings.",
-    technologies: ["Nextjs", "TailwindCSS", "React", "Typescript", "Stream.io"],
+      "A full-featured video conferencing platform with real-time meetings, recording, screen sharing, and personal room management. Built with Next.js and Stream.io, integrating Clerk for authentication and ShadCN for UI components. Fully responsive and optimized for modern collaboration.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Stream.io",
+      "Clerk",
+      "Shadcn",
+    ],
   },
-  //   {
-  //     title: "Portfolio Website",
-  //     image: project3,
-  //     description:
-  //       "A personal portfolio website showcasing projects, skills, and contact information.",
-  //     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  //   },
-  //   {
-  //     title: "Blogging Platform",
-  //     image: project4,
-  //     description:
-  //       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  //   },
+  {
+    title: "WhatsApp Clone",
+    image: project1,
+    description:
+      "A real-time messaging app supporting text, emoji, image, and video chat for individuals and groups. Includes custom themes, video calling, and OpenAI-powered features — ChatGPT for contextual Q&A and DALL·E for on-demand image generation. Built with Convex for real-time data sync.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "ConvexDB",
+      "OpenAI API",
+    ],
+  },
 ];
 
 export const CONTACT = {
-  address: "Saida-Beirut,Lebanon ",
-  phoneNo: "+961 78 919 829 ",
+  address: "Saida – Beirut, Lebanon",
+  phoneNo: "+961 78 919 829",
   email: "danidh20052005@gmail.com",
+  website: "https://daniel-dhaini.vercel.app/",
 };
