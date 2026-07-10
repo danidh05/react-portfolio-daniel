@@ -1,4 +1,4 @@
-import { FiArrowUpRight, FiImage } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 import type { Project } from "../data/projects";
 import Reveal from "./Reveal";
 
@@ -16,11 +16,13 @@ export default function ProjectCard({ project, delay = 0 }: ProjectCardProps) {
         rel="noreferrer"
         className="group grid gap-8 rounded-2xl border border-ink-200 p-6 transition-colors duration-300 hover:border-accent-500/60 sm:p-8 md:grid-cols-[minmax(0,0.85fr)_1fr] dark:border-ink-800 dark:hover:border-accent-400/50"
       >
-        <div className="flex aspect-video w-full flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-ink-300 bg-ink-100/60 text-ink-400 dark:border-ink-700 dark:bg-ink-900/60 dark:text-ink-500">
-          <FiImage size={22} />
-          <span className="font-mono text-xs uppercase tracking-wide">
-            Screenshot placeholder
-          </span>
+        <div className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl border border-ink-200 bg-ink-100/60 dark:border-ink-800 dark:bg-ink-900/60">
+          <img
+            src={project.image}
+            alt={`${project.name} screenshot`}
+            loading="lazy"
+            className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]"
+          />
         </div>
 
         <div className="flex flex-col">
